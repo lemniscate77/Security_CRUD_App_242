@@ -31,12 +31,11 @@ public class UserController {
 
     @GetMapping(value = "/user")
     public String getUserPage(Model model) {
-         UserDetails user = (UserDetails) SecurityContextHolder
+        UserDetails user = (UserDetails) SecurityContextHolder
                 .getContext()
                 .getAuthentication()
                 .getPrincipal();
-        User user1 = userService.getUserByName(user.getUsername());
-        model.addAttribute("user", user1);
+        model.addAttribute("user", userService.getUserByName(user.getUsername()));
         return "user-details";
     }
 
