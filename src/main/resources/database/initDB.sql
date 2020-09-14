@@ -35,9 +35,9 @@ CREATE TABLE user_roles
 
 -- Insert data
 INSERT INTO users
-VALUES (10, 'admin', 'admin', 'admin@ya.ru', 'admin'),
-       (101, 'user', 'user', 'user@ya.ru', 'user'),
-       (102, 'user', 'admin', 'admin@go.com','admin');
+VALUES (1, 'admin', 'admin', 'admin@ya.ru', 'admin'),
+       (2, 'user', 'user', 'user@ya.ru', 'user'),
+       (3, 'user', 'admin', 'admin@go.com','admin');
 
 INSERT INTO roles
 VALUES (1, 'ROLE_USER');
@@ -45,10 +45,10 @@ INSERT INTO roles
 VALUES (2, 'ROLE_ADMIN');
 
 INSERT INTO user_roles
-VALUES (10, 2);
+VALUES (1, 2);
 INSERT INTO user_roles
-VALUES (101, 1);
+VALUES (2, 1);
 INSERT INTO user_roles
-VALUES (102, 1);
+VALUES (3, 1);
 INSERT INTO user_roles
-VALUES (102, 2);
+VALUES (3, 2);
