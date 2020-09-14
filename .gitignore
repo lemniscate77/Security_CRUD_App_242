@@ -1,2 +1,5 @@
 # Project exclude paths
 /target/
+/.idea/
+Security_CRUD_App_242.iml
+
