@@ -13,5 +13,6 @@ public interface UserService extends UserDetailsService {
     void delete(Integer id);
     void edit(User user);
     User getById(Integer id);
+    User getUserByName(String name);
 }
 

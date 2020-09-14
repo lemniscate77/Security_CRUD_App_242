@@ -5,60 +5,56 @@
     <meta charset="UTF-8">
 
     <title>User Details</title>
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--    <link rel="stylesheet"-->
-<!--          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
-<!--          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"-->
-<!--          crossorigin="anonymous">-->
-<!--    <link rel="stylesheet"-->
-<!--          href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"-->
-<!--          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"-->
-<!--          crossorigin="anonymous">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+          crossorigin="anonymous">
 <!--    <link rel="stylesheet" href="../css/shards.min.css">-->
-</head>
 
+<!--    -->
+</head>
 <body>
 <h2>Hello USER </th></h2>
-
 <h3>User INFO</h3>
-
-
 <tr>
     <td>User Id:</td>
-    <th th:text="${user.id}"></th><br><br>
+
+    <th th:text="${name}"></th><br><br>
 </tr>
 
-<tr>
-    <td>User FirstName:</td>
-    <th th:text="${user.firstName}"></th><br><br>
-</tr>
+<!--<tr>-->
+<!--    <td>User FirstName:</td>-->
+<!--    <th th:text="${user.firstName}"></th><br><br>-->
+<!--</tr>-->
 
-<tr>
-    <td>User LastName:</td>
-    <th th:text="${user.lastName}"></th><br><br>
-</tr>
+<!--<tr>-->
+<!--    <td>User LastName:</td>-->
+<!--    <th th:text="${user.lastName}"></th><br><br>-->
+<!--</tr>-->
 
-<tr>
-    <td>User Email:</td>
-    <th th:text="${user.email}"></th><br><br>
-</tr>
+<!--<tr>-->
+<!--    <td>User Email:</td>-->
+<!--    <th th:text="${user.email}"></th><br><br>-->
+<!--</tr>-->
 
 <tr>
     <td>User Password:</td>
-    <th th:text="${user.password}"></th><br><br>
+    <th th:text="${password}"></th><br><br>
 </tr>
-
-
-
 <br>
 <br>
 <br>
-
 <form th:action="@{/logout}">
     <input type="submit" value="logout">
 </form>
 
 </body>
+
 
 
 <!--<body>-->
@@ -73,7 +69,7 @@
 <!--    <div class="card">-->
 <!--        <div class="card-body">-->
 <!--            &lt;!&ndash;/*@thymesVar id="users" type=""*/&ndash;&gt;-->
-<!--            <div th:switch="${user}" class="container my-4">-->
+<!--            <div th:switch="${name}" class="container my-4">-->
 
 <!--                <div class="col-md-10">-->
 
