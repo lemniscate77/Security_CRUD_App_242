@@ -28,20 +28,20 @@ public class UserController {
     }
 
 
-
     @GetMapping(value = "/user")
-    public String getUserPage(ModelMap model) {
-         UserDetails user = (UserDetails) SecurityContextHolder
+    public String getUserPage(Model model) {
+         User user = (User) SecurityContextHolder
                 .getContext()
                 .getAuthentication()
                 .getPrincipal();
-         User user1 = userService.getUserByName(user.getUsername());
-         model.addAttribute("name", user1.getFirstName());
-         model.addAttribute("password",user1.getPassword());
-//        ModelAndView modelAndView = new ModelAndView("user-details");
-//        modelAndView.addObject("user",user);
-
-        //model.addAttribute("user", user);
+        User user1 = userService.getByName(user.getUsername());
+        User user2 = new User();
+        user2.setId(159);
+        user2.setFirstName("USER2-NAME");
+        user2.setLastName("USER2-LASTNAME");
+        user2.setEmail("USER2@EMAIL.EMAIL");
+        user2.setPassword("USER2-PASS");
+        model.addAttribute("user", user1);
         return "user-details";
     }
 

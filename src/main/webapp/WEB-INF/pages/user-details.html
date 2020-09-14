@@ -19,32 +19,32 @@
 <!--    -->
 </head>
 <body>
-<h2>Hello USER </th></h2>
+<h2>Hello, <th th:text=" ${user.firstName}"></th></h2>
 <h3>User INFO</h3>
 <tr>
     <td>User Id:</td>
 
-    <th th:text="${name}"></th><br><br>
+    <th th:text="${user.id}"></th><br>
 </tr>
 
-<!--<tr>-->
-<!--    <td>User FirstName:</td>-->
-<!--    <th th:text="${user.firstName}"></th><br><br>-->
-<!--</tr>-->
+<tr>
+    <td>User FirstName:</td>
+    <th th:text="${user.firstName}"></th><br>
+</tr>
 
-<!--<tr>-->
-<!--    <td>User LastName:</td>-->
-<!--    <th th:text="${user.lastName}"></th><br><br>-->
-<!--</tr>-->
+<tr>
+    <td>User LastName:</td>
+    <th th:text="${user.lastName}"></th><br>
+</tr>
 
-<!--<tr>-->
-<!--    <td>User Email:</td>-->
-<!--    <th th:text="${user.email}"></th><br><br>-->
-<!--</tr>-->
+<tr>
+    <td>User Email:</td>
+    <th th:text="${user.email}"></th><br>
+</tr>
 
 <tr>
     <td>User Password:</td>
-    <th th:text="${password}"></th><br><br>
+    <th th:text="${user.password}"></th><br>
 </tr>
 <br>
 <br>
